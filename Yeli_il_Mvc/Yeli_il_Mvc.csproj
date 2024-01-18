@@ -1,0 +1,56 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ViewModel\**" />
+    <Content Remove="ViewModel\**" />
+    <EmbeddedResource Remove="ViewModel\**" />
+    <None Remove="ViewModel\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.25" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.25" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.25">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Areas\Admin\Views\Category\Create.cshtml" />
+    <None Include="Areas\Admin\Views\Category\Details.cshtml" />
+    <None Include="Areas\Admin\Views\Category\Index.cshtml" />
+    <None Include="Areas\Admin\Views\Category\Update.cshtml" />
+    <None Include="Areas\Admin\Views\Color\Create.cshtml" />
+    <None Include="Areas\Admin\Views\Color\Details.cshtml" />
+    <None Include="Areas\Admin\Views\Color\Index.cshtml" />
+    <None Include="Areas\Admin\Views\Color\Update.cshtml" />
+    <None Include="Areas\Admin\Views\Home\Index.cshtml" />
+    <None Include="Areas\Admin\Views\Product\Create.cshtml" />
+    <None Include="Areas\Admin\Views\Product\Details.cshtml" />
+    <None Include="Areas\Admin\Views\Product\Index.cshtml" />
+    <None Include="Areas\Admin\Views\Product\Update.cshtml" />
+    <None Include="Areas\Admin\Views\Shared\_AdminLayout.cshtml" />
+    <None Include="Areas\Admin\Views\Size\Create.cshtml" />
+    <None Include="Areas\Admin\Views\Size\Details.cshtml" />
+    <None Include="Areas\Admin\Views\Size\Index.cshtml" />
+    <None Include="Areas\Admin\Views\Size\Update.cshtml" />
+    <None Include="Areas\Admin\Views\Slide\Create.cshtml" />
+    <None Include="Areas\Admin\Views\Slide\Details.cshtml" />
+    <None Include="Areas\Admin\Views\Slide\Index.cshtml" />
+    <None Include="Areas\Admin\Views\Slide\Update.cshtml" />
+    <None Include="Areas\Admin\Views\_ViewImports.cshtml" />
+    <None Include="Areas\Admin\Views\_ViewStart.cshtml" />
+    <None Include="Views\Shared\Components\Product\Default.cshtml" />
+  </ItemGroup>
+
+</Project>
